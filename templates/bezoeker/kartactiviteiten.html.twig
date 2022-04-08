@@ -12,6 +12,10 @@
             <ul class="list-group">
                 {% for activiteit in soortactiviteiten %}
                 <li class="list-group-item text-primary">{{ activiteit.naam }}</li>
+                   {{ activiteit.beschrijving }}
+                    {{ activiteit.prijs }}
+                    {{ activiteit.tijdsduur }}
+                    {{ activiteit.minLeeftijd }}</li>
                 {% endfor %}
             </ul>
             <p>

@@ -21,14 +21,14 @@
 
 {% block menu %}
     <li><a href="{{ path('activiteitenoverzicht') }}">home</a></li>
-    <li><a href="{{ path('beheer') }}"><span class="badge">{{ aantal}}</span>beheer</a></li>
-    <li><a href="{{ path('soortAction') }}"><span class="badge">{{ soortActiviteiten|length }}</span>soortAction</a></li>
+    <li><a href="{{ path('beheer') }}"><span class="badge"></span>beheer</a></li>
+    <li><a href="{{ path('soortAction') }}"><span class="badge">{{ aantal}}</span>soortAction</a></li>
 {% endblock %}
 
 
 
 {% block content %}
-    <h3>Activiteit {{ naam }}</h3>
+    <h3>Soort Activiteit {{ naam }}</h3>
 
         {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
         {{ form_widget(form) }}

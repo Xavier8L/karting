@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4925ba3f-4778-4576-9410-6a8c4ecc0e0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karting.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Soortactiviteit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Soortactiviteit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bezoeker/kartactiviteiten.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bezoeker/kartactiviteiten.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +170,7 @@
       <workItem from="1648199289079" duration="36000" />
       <workItem from="1648199325707" duration="2031000" />
       <workItem from="1648204523611" duration="29000" />
-      <workItem from="1648204566593" duration="1321000" />
+      <workItem from="1648204566593" duration="3292000" />
     </task>
     <servers />
   </component>
@@ -183,5 +186,15 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1648200138308" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/bezoeker/kartactiviteiten.html.twig</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
