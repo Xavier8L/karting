@@ -15,7 +15,7 @@ class DeelnemerController extends AbstractController
     public function activiteitenAction()
     {
         $usr= $this->get('security.token_storage')->getToken()->getUser();
-
+        $datum =  date("Y/m/d");
         $beschikbareActiviteiten=$this->getDoctrine()
             ->getRepository('App:Activiteit')
         ->getBeschikbareActiviteiten($usr->getId());
@@ -34,6 +34,7 @@ class DeelnemerController extends AbstractController
                 'beschikbare_activiteiten'=>$beschikbareActiviteiten,
                 'ingeschreven_activiteiten'=>$ingeschrevenActiviteiten,
                 'totaal'=>$totaal,
+                'datum_vandaag'=>$datum
         ]);
     }
 

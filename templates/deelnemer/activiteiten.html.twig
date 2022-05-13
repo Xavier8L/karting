@@ -23,12 +23,12 @@
         </thead>
         <tbody>
         {% for activiteit in beschikbare_activiteiten %}
+                {% if activiteit.datum|date("Y/m/d") >= datum_vandaag %}
             {% if activiteit.users|length <  activiteit.aantalDeelnemers  %}
                 <tr>
             {% else %}
                 <tr style="background: red">
             {% endif %}
-
             <td>
                 {{ activiteit.datum|date("d-m-Y")}}
             </td>
@@ -53,6 +53,7 @@
                 {% endif %}
             </td>
         </tr>
+            {% endif %}
         {% endfor %}
         </tbody>
     </table>
