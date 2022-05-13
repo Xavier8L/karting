@@ -29,6 +29,7 @@ class DeelnemerController extends AbstractController
             ->getTotaal($ingeschrevenActiviteiten);
 
 
+
         return $this->render('deelnemer/activiteiten.html.twig', [
                 'beschikbare_activiteiten'=>$beschikbareActiviteiten,
                 'ingeschreven_activiteiten'=>$ingeschrevenActiviteiten,

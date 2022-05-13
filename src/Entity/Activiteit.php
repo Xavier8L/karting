@@ -56,6 +56,11 @@ class Activiteit
 
     private $users;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $aantalDeelnemers;
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -133,6 +138,18 @@ class Activiteit
     public function setSoort($soort)
     {
         $this->soort=$soort;
+    }
+
+    public function getAantalDeelnemers(): ?int
+    {
+        return $this->aantalDeelnemers;
+    }
+
+    public function setAantalDeelnemers(int $aantalDeelnemers): self
+    {
+        $this->aantalDeelnemers = $aantalDeelnemers;
+
+        return $this;
     }
 }
 
